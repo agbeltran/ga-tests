@@ -28,7 +28,7 @@ jobs:
     - name: Download widoco
       run: mkdir widoco && wget -O widoco/widoco.jar https://github.com/dgarijo/Widoco/releases/download/v1.4.14/widoco-1.4.14-jar-with-dependencies.jar
   
- - name: Compile documentation
+    - name: Compile documentation
       run: |
         cd widoco
         mkdir config
