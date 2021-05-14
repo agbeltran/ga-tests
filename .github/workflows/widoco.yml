@@ -37,16 +37,13 @@ jobs:
         -oops \
         -webVowl \
         -includeAnnotationProperties \
-        -outFolder doc/ \
+        -outFolder docs/ \
         -rewriteAll \
         -confFile ../source/widoco.config \
         -includeImportedOntologies \
         -uniteSections \
         -excludeIntroduction
-                
-    - name: Copy mirrored ontologies to docs folder
-      run: cp -r mirror/ docs/
-
+                    
     - name: Publish on Github Pages
       uses: crazy-max/ghaction-github-pages@v2.3.0
       with:
