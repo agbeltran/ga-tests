@@ -30,8 +30,7 @@ jobs:
   
     - name: Compile documentation
       run: |
-        cd widoco
-        mkdir config
+        cd widoco        
         java -jar ./widoco.jar \
         -ontFile ../source/PaNET_V0.60.owl \
         -oops \
@@ -43,10 +42,3 @@ jobs:
         -includeImportedOntologies \
         -uniteSections \
         -excludeIntroduction
-                    
-    - name: Publish on Github Pages
-      uses: crazy-max/ghaction-github-pages@v2.3.0
-      with:
-        build_dir: docs 
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
