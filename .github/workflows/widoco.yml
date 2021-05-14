@@ -42,3 +42,4 @@ jobs:
         -includeImportedOntologies \
         -uniteSections \
         -excludeIntroduction
+        mv docs/ ../docs/        
