@@ -36,10 +36,10 @@ jobs:
         -oops \
         -webVowl \
         -includeAnnotationProperties \
-        -outFolder docs/ \
+        -outFolder doc/ \
         -rewriteAll \
         -confFile ../source/widoco.config \
         -includeImportedOntologies \
         -uniteSections \
         -excludeIntroduction
-        mv docs/ ../docs/        
+        cp -r ./doc/* ../doc
