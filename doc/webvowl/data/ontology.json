@@ -2,9 +2,10 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://purl.org/pan-science/PaNET" ],
     "iri" : "http://www.purl.org/pan-science/PaNET/PaNET.owl",
     "version" : "Version 0.60 12/5/2021",
-    "author" : [ "H Gorzig", "D Iyayi", "A. Gonzalez Beltran", "S P Collins\norcid.org/0000-0001-5120-0764", "S. Da Graca Ramos" ],
+    "author" : [ "H Gorzig", "A. Gonzalez Beltran", "D Iyayi", "S P Collins\norcid.org/0000-0001-5120-0764", "S. Da Graca Ramos" ],
     "comments" : {
       "undefined" : "An ontology of experimental techniques within the photon and neutron (PaN) domain.\n\nPurpose\n\nThe main purpose of this ontology is to provide a controlled vocabulary, global PIDs and annotations \nfor photon and neutron techniques, to support PaN FAIR data catalogue functionality.\n\nDesign philosophy\n\nIn this simple ontology everything is a class and all classes are techniques. Object property relations\nare implied but not formalized in this version. Subclass/superclass relationships and intersections are \nused to define specific technique classes in terms of broader superclasses. This is seen as a key\nrequirement in order to carry out catalogue searcher for broader concepts, for example.\n\nThis project was undertaken under ExPaNDS WP3.2 (https://expands.eu/)\n\nThe ontology is can be found here: https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology\n\nPhoton and neutron PaN ontologies developed under ExPaNDS are documented here: xxxxxxx"
     },
@@ -18,7 +19,7 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "H Gorzig",
+        "value" : "A. Gonzalez Beltran",
         "type" : "label"
       }, {
         "identifier" : "creator",
@@ -28,17 +29,17 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "S. Da Graca Ramos",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
         "value" : "D Iyayi",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "A. Gonzalez Beltran",
+        "value" : "H Gorzig",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "S. Da Graca Ramos",
         "type" : "label"
       } ],
       "versionInfo" : [ {
@@ -54,34 +55,37 @@
     "id" : "0",
     "type" : "owl:Class"
   }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
     "id" : "2",
     "type" : "owl:Class"
   }, {
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
     "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:equivalentClass"
-  }, {
     "id" : "9",
     "type" : "owl:Class"
   }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
     "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
     "type" : "owl:Class"
   }, {
     "id" : "13",
@@ -98,8 +102,420 @@
   }, {
     "id" : "17",
     "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01326",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01326",
+      "undefined" : "birefringence"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01081",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01081",
+      "undefined" : "obtain magnetic density"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01004",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01004",
+      "undefined" : "nanofocussed probe"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01202",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Photoemission_spectroscopy",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PES",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01202",
+      "undefined" : "photoelectron spectroscopy"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01324",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "obtain surface atomic structure",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01324",
+      "undefined" : "surface crystallography"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01242",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Neutron_scattering",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01242",
+      "undefined" : "neutron scattering"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01285",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Radiography",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01285",
+      "undefined" : "x-ray imaging"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01200",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/X-ray_emission_spectroscopy",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "XES",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01200",
+      "undefined" : "x-ray emission spectroscopy"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01002",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "femtosecond probe",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01002",
+      "undefined" : "ultrafast probe"
+    },
+    "subClasses" : [ "10" ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01316",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "GIWAXS",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01316",
+      "undefined" : "grazing incidence wide angle scattering"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01118",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01118",
+      "undefined" : "polarised reflectivity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01238",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01238",
+      "undefined" : "pulse overlap diffraction"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01270",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01270",
+      "undefined" : "nuclear resonant scattering"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01195",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Raman_spectroscopy",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01195",
+      "undefined" : "raman spectroscopy"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01037",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01037",
+      "undefined" : "low momentum transfer scattering"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01311",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "LCP-SSX",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01311",
+      "undefined" : "lipidic cubic phase serial synchrotron crystallography"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01116",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Phase-contrast_imaging",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01116",
+      "undefined" : "phase contrast imaging"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET00100",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET00100",
+      "undefined" : "photon probe"
+    },
+    "subClasses" : [ "14", "3" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01277",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01277",
+      "undefined" : "time of flight small angle neutron scattering"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01199",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/X-ray_absorption_near_edge_structure",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "XANES",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "NEXAFS",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01199",
+      "undefined" : "x-ray absorption near edge structure"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01109",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
@@ -122,141 +538,157 @@
       "undefined" : "infrared spectroscopy"
     },
     "attributes" : [ "external" ],
-    "id" : "0",
-    "superClasses" : [ "1" ]
+    "id" : "20"
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET01218",
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01229",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "PaNET01218",
-      "undefined" : "ambient pressure x-ray photoelectron spectroscopy"
+      "IRI-based" : "PaNET01229",
+      "undefined" : "nonlinear x-ray spectroscopy"
     },
     "attributes" : [ "external" ],
-    "id" : "2"
+    "id" : "21"
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET01292",
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01184",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
-    "annotations" : {
-      "altLabel" : [ {
-        "identifier" : "altLabel",
-        "language" : "undefined",
-        "value" : "nano ARPES",
-        "type" : "label"
-      } ]
-    },
     "label" : {
-      "IRI-based" : "PaNET01292",
-      "undefined" : "nano angle resolved photoemission spectroscopy"
+      "IRI-based" : "PaNET01184",
+      "undefined" : "x-ray scattering"
     },
+    "subClasses" : [ "24" ],
     "attributes" : [ "external" ],
-    "id" : "3"
+    "id" : "25"
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET01163",
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01060",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
-    "annotations" : {
-      "altLabel" : [ {
-        "identifier" : "altLabel",
-        "language" : "undefined",
-        "value" : "Diffraction",
-        "type" : "label"
-      } ]
-    },
     "label" : {
-      "IRI-based" : "PaNET01163",
-      "undefined" : "high pressure single crystal diffraction"
+      "IRI-based" : "PaNET01060",
+      "undefined" : "versus emitted polarization"
     },
+    "subClasses" : [ "27" ],
     "attributes" : [ "external" ],
-    "id" : "4"
+    "id" : "28"
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET01180",
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01181",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
     "annotations" : {
       "IAO_0000119" : [ {
         "identifier" : "IAO_0000119",
         "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/X-ray_microscope",
+        "value" : "https://en.wikipedia.org/wiki/Pair_distribution_function",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PDF",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "PaNET01180",
-      "undefined" : "x-ray microscopy"
+      "IRI-based" : "PaNET01181",
+      "undefined" : "pair distribution function"
     },
     "attributes" : [ "external" ],
-    "id" : "6"
+    "id" : "35"
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET01158",
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01147",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "PaNET01158",
-      "undefined" : "in-situ surface diffraction"
+      "IRI-based" : "PaNET01147",
+      "undefined" : "scanning probe imaging"
     },
     "attributes" : [ "external" ],
-    "id" : "10"
+    "id" : "38"
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET01169",
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01301",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
     "annotations" : {
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "SSX",
+        "value" : "XMChiD",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "PaNET01169",
-      "undefined" : "serial synchrotron crystallography"
+      "IRI-based" : "PaNET01301",
+      "undefined" : "x-ray magnetochiral dichroism"
     },
     "attributes" : [ "external" ],
-    "id" : "8",
-    "superClasses" : [ "9" ]
+    "id" : "39"
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET00102",
-    "baseIri" : "http://purl.org/pan-science/PaNET",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PaNET00102",
-      "undefined" : "muon probe"
-    },
-    "attributes" : [ "external" ],
-    "id" : "11"
-  }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET01125",
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01224",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
     "annotations" : {
       "IAO_0000119" : [ {
         "identifier" : "IAO_0000119",
         "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/Spectroscopy",
+        "value" : "https://en.wikipedia.org/wiki/X-ray_lithography",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "PaNET01125",
-      "undefined" : "spectroscopy"
+      "IRI-based" : "PaNET01224",
+      "undefined" : "x-ray lithography"
     },
-    "subClasses" : [ "0" ],
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "1"
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "31" ]
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET01003",
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01268",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Mass_spectrometry",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01268",
+      "undefined" : "mass spectrometry"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01223",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Lithography",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01223",
+      "undefined" : "lithography"
+    },
+    "subClasses" : [ "30" ],
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01226",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "PaNET01003",
-      "undefined" : "single shot technique"
+      "IRI-based" : "PaNET01226",
+      "undefined" : "x-ray interference lithography"
     },
-    "subClasses" : [ "8" ],
     "attributes" : [ "external" ],
-    "id" : "9"
+    "id" : "41"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01027",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -266,25 +698,7 @@
       "undefined" : "atomic scale diffraction 3D volume"
     },
     "attributes" : [ "external" ],
-    "id" : "12"
-  }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET01269",
-    "baseIri" : "http://purl.org/pan-science/PaNET",
-    "instances" : 0,
-    "annotations" : {
-      "IAO_0000119" : [ {
-        "identifier" : "IAO_0000119",
-        "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/Photoelectric_effect",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "PaNET01269",
-      "undefined" : "photoelectron emission"
-    },
-    "attributes" : [ "external" ],
-    "id" : "13"
+    "id" : "42"
   }, {
     "iri" : "http://purl.org/pan-science/PaNET/PaNET01186",
     "baseIri" : "http://purl.org/pan-science/PaNET",
@@ -302,68 +716,258 @@
       "undefined" : "resonant x-ray scattering"
     },
     "attributes" : [ "external" ],
-    "id" : "14"
+    "id" : "24",
+    "superClasses" : [ "25" ]
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET01233",
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01222",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "PaNET01233",
-      "undefined" : "polymer micro and nanografting"
+      "IRI-based" : "PaNET01222",
+      "undefined" : "spin and angle resolved photoemission spectroscopy"
     },
     "attributes" : [ "external" ],
-    "id" : "15"
+    "id" : "27",
+    "superClasses" : [ "28" ]
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET01145",
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET00208",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET00208",
+      "undefined" : "dispersive technique"
+    },
+    "attributes" : [ "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01139",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01139",
+      "undefined" : "natural linear dichroism"
+    },
+    "attributes" : [ "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET00405",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET00405",
+      "undefined" : "drug fragment binding"
+    },
+    "attributes" : [ "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01172",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01172",
+      "undefined" : "surface x-ray diffraction"
+    },
+    "attributes" : [ "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01094",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01094",
+      "undefined" : "fluorescence luminescence"
+    },
+    "attributes" : [ "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01251",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01251",
+      "undefined" : "THz near field microscopy"
+    },
+    "attributes" : [ "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01092",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01092",
+      "undefined" : "emission spectroscopy"
+    },
+    "attributes" : [ "external" ],
+    "id" : "33",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET00201",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Independent of probe; classed also as scattering if the probe and emitted particles are of the same type; disjoint with elastic scattering",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET00201",
+      "undefined" : "emission technique"
+    },
+    "subClasses" : [ "33" ],
+    "attributes" : [ "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01058",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01058",
+      "undefined" : "versus emission momentum"
+    },
+    "attributes" : [ "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01014",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Energy is between hard and soft x-ray, e.g. sulphur K edge",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01014",
+      "undefined" : "tender x-ray probe"
+    },
+    "attributes" : [ "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01215",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01215",
+      "undefined" : "optics characterization"
+    },
+    "attributes" : [ "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01137",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
     "annotations" : {
       "IAO_0000119" : [ {
         "identifier" : "IAO_0000119",
         "language" : "undefined",
-        "value" : "https://en.wikipedia.org/wiki/Electron_microscope",
+        "value" : "https://en.wikipedia.org/wiki/X-ray_magnetic_circular_dichroism",
         "type" : "label"
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "undefined",
-        "value" : "EM",
+        "value" : "XMCD",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "PaNET01145",
-      "undefined" : "electron microscopy"
+      "IRI-based" : "PaNET01137",
+      "undefined" : "x-ray magnetic circular dichroism"
     },
     "attributes" : [ "external" ],
-    "id" : "16"
+    "id" : "52"
   }, {
-    "iri" : "http://purl.org/pan-science/PaNET/PaNET01232",
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01010",
     "baseIri" : "http://purl.org/pan-science/PaNET",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "PaNET01232",
-      "undefined" : "grayscale lithography"
+      "IRI-based" : "PaNET01010",
+      "undefined" : "VUV photon probe"
     },
     "attributes" : [ "external" ],
-    "id" : "17"
+    "id" : "53"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01134",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01134",
+      "undefined" : "wide angle scattering"
+    },
+    "attributes" : [ "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01056",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01056",
+      "undefined" : "versus incident energy"
+    },
+    "attributes" : [ "external" ],
+    "id" : "55"
   } ],
   "property" : [ {
-    "id" : "5",
+    "id" : "22",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "7",
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
     "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
-    "range" : "1",
-    "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "5"
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "25",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "28",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "31",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "34",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
   }, {
     "range" : "9",
-    "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "7"
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "4",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
   } ]
 }
